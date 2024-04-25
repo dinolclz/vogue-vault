@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VogueVault | About Us</title>
+<style>
+/* Basic CSS for the page */
+body {
+    font-family: 'Pacifico', cursive;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1{
+	text-align: center;
+	font-family: "Garamond", "Georgia", serif;
+}
+
+.navigationbar ul{
+	list-style-type: none;
+	background-color: #FD9F7D;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+.navigationbar a{
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+	text-align: center;
+}
+.navigationbar a:hover{
+	background-color: #FA916B;
+}
+.navigationbar li{
+	float: left;
+	font-family: "Arial", "Verdana", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+#search form{
+	float: right;
+	margin-top: 10px;
+	margin-right: 40px;
+}
+#search form{
+	background-color: #FFFFFF;
+	width: 300px;
+	height; 50px;
+	display: flex;
+}
+#search form input{
+	flex: 1;
+	border: none;
+	outline: none;
+}
+#search form button{
+	background-color: #FF7F50;
+	padding: 10px 50px;
+	border: none;
+	outline: none;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+#search form button:hover{
+	 background-color: #FF6347;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.about-us {
+    margin-top: 20px;
+}
+
+.about-us-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info p:first-child {
+    margin-top: 0;
+}
+
+</style>
+</head>
+<body>
+<h1>VogueVault</h1>
+<nav class="navigationbar">
+	<ul>
+		<li><a href="Home.html">Home</a></li>
+		<li><a href="#">Products</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="About.html">About Us</a></li>
+		<li><a href="SignIn.html">Sign In</a></li>
+		<section id="search">
+			<div class="searchbar">
+				<form>
+					<input type="text" placeholder="Enter Product Name">
+					<button type="submit" class="search_btn">Search</button>
+				</form>
+			</div>
+		</section>
+	</ul>
+</nav>
+<div class="container">
+    <div class="search-container">
+        <div class="dropdown">
+            <input type="text" placeholder="Search VogueVault">
+            <div class="dropdown-content">
+                <a href="#"Dresses</a>
+                <a href="#">Skirts</a>
+                <a href="#">Tops</a>
+                <a href="#">Pants</a>
+                <a href="#">Jewellery</a>
+            </div>
+        </div>
+    </div>
+    <div class="about-us">
+        <div class="about-us-container">
+            <h2>About Us</h2>
+            <p>Welcome to VogueVault, your premier destination for exquisite fashion from a wide array of designer brands. At VogueVault, we meticulously curate a diverse collection of clothing and accessories, ranging from established luxury labels to emerging designers, ensuring that every piece reflects the highest standards of quality, craftsmanship, and style. Step into our world and explore a treasure trove of fashion-forward pieces that will elevate your wardrobe to new heights of elegance and sophistication.</p>
+        </div>
+    </div>
+</div>
+<div class="contact-info">
+    <p>Email: info@voguevault.com</p>
+    <p>Phone: (868) 476-7890 / (868) 683-9821</p>
+    <p>Fax: 1-555-123-4567</p>
+    <p>Address: #12 Frederick Street Port of Spain, Trinidad, W.I.</p>
+</div>
+</body>
+</html>
