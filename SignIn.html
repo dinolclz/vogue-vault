@@ -7,7 +7,7 @@
     <title>VogueVault | Sign In</title>
     <style>
         /* Basic CSS for the sign-in page */
-		body {
+        body {
             font-family: Arial, sans-serif;
             background-color: #f3f3f3;
             display: flex;
@@ -60,8 +60,9 @@
         button:hover {
             background-color: #ff6347;
         }
-		.remember-me {
-			display: flex;
+
+        .remember-me {
+            display: flex;
             align-items: center;
             margin: 10px 0;
         }
@@ -87,24 +88,45 @@
     </style>
 </head>
 <body>
-	<div class="container">
+    <div class="container">
         <h2>VogueVault</h2>
-        <form action="/signin" method="POST">
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="password" placeholder="Password" required>
+        <form id="signInForm" action="/signin" method="POST">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
             <div class="remember-me">
                 <input type="checkbox" name="remember" id="remember">
                 <label for="remember">Remember me</label>
             </div>
-            <button type="submit">Sign In</button>
+            <button type="button" id="signInButton">Sign In</button>
         </form>
         <div class="links">
             <a href="/forgot-password">Forgot Password?</a>
             <span>|</span>
             <a href="/sign-up">Sign Up</a>
-			<br><br>
-			<a href="index.html">Back to Home Page<a/>
+            <br><br>
+            <a href="index.html">Back to Home Page</a>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const signInButton = document.getElementById('signInButton');
+
+            signInButton.addEventListener('click', function() {
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+
+                // Simple validation (you can enhance this)
+                if (email.trim() === '' || password.trim() === '') {
+                    alert('Please enter both email and password.');
+                    return;
+                }
+
+                // Simulate form submission or perform other tasks
+                // For now, just redirect to the specified URL
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
 </body>
 </html>
