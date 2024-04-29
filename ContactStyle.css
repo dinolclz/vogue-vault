@@ -1,0 +1,131 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #F3F3F3;
+}
+
+h1{
+	text-align: center;
+	font-family: "Garamond", "Georgia", serif;
+}
+.navigationbar ul{
+	list-style-type: none;
+	background-color: #FD9F7D;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+.navigationbar a{
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 15px;
+	display: block;
+	text-align: center;
+}
+.navigationbar a:hover{
+	background-color: #FA916B;
+}
+.navigationbar li{
+	float: left;
+	font-family: "Arial", "Verdana", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+}
+#search form{
+	float: right;
+	margin-top: 10px;
+	margin-right: 40px;
+}
+#search form{
+	background-color: #FFFFFF;
+	width: 300px;
+	height; 50px;
+	display: flex;
+}
+#search form input{
+	flex: 1;
+	border: none;
+	outline: none;
+}
+#search form button{
+	background-color: #FF7F50;
+	padding: 10px 50px;
+	border: none;
+	outline: none;
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+#search form button:hover{
+	 background-color: #FF6347;
+}
+
+h2{
+	font-family: "Garamond", "Georgia", serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+.container{
+	border-radius: 5px;
+	box-shadow: 0 1px 7px #888888;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	width: 35%;
+	height: 500px;
+	padding: 20px;
+}
+
+.forms{
+	margin-left: 132px;
+}
+
+.forms p{
+	font-family: "Garamond", "Georgia", serif;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.forms input{
+	width: 400px;
+	font-size: 17px;
+}
+
+.forms .message textarea{
+	margin-top: 2px;
+	resize:none;
+	width: 400px;
+	height: 260px;
+	font-size: 17px;
+}
+
+.forms .submit input{
+	margin-top: 10px;
+	width: 100px;
+	height: 30px;
+	border: 0;
+	background-color: #FF7F50;
+}
+
+.forms .submit input:hover{
+	background-color: #FF6347;
+}
+
+.contact-info {
+	font-family: 'Pacifico', cursive;
+    margin-top: 20px;
+	text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info p:first-child {
+    margin-top: 0;
+}
